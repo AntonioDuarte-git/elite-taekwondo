@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Élite Taekwondo Málaga — Taekwondo Olímpico y Tradicional</title>
+<meta name="description" content="Club de Taekwondo Olímpico y Tradicional en el centro de Málaga. Todos los días de 18:00 a 20:00, de 4 a 100 años. Maestra Eva Párraga. Calle Ayala, 11.">
+<meta property="og:title" content="Élite Taekwondo Málaga">
+<meta property="og:description" content="Taekwondo Olímpico y Tradicional en el centro de Málaga. Lealtad, valentía, verdad, familia.">
+<meta property="og:image" content="assets/logo.png">
+<link rel="icon" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{--accent:#8EC5C6}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#0A0A0A;font-family:'Outfit',system-ui,sans-serif;font-weight:300;color:#ECEAE4;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:hover{color:#8EC5C6}
+.wrap{max-width:1360px;margin:0 auto;padding:0 40px;box-sizing:border-box}
+.serif{font-family:'Outfit',system-ui,sans-serif;font-weight:500;letter-spacing:-.045em}
+.it{font-weight:200;font-style:normal}
+.lt{font-weight:300}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.layer{position:absolute;pointer-events:none;will-change:transform}
+.b3{position:absolute;inset:0;width:100%;height:100%;display:block}
+.sway{transform-style:preserve-3d;animation:sway 7s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotateY(-14deg) rotateX(4deg)}50%{transform:rotateY(14deg) rotateX(-3deg)}}
+@media (prefers-reduced-motion: reduce){.sway{animation:none;transform:rotateY(-12deg)}}
+.fighters{background-image:url(assets/fighters.png);background-size:900% 100%;background-repeat:no-repeat}
+.fr5{background-position:62.5% 0}.fr2{background-position:25% 0}
+.rule{height:1px;background:rgba(236,234,228,.18);border:0;margin:0}
+.rule-d{height:1px;background:rgba(10,10,10,.2);border:0;margin:0}
+.row a{text-decoration:none}
+.marq{display:flex;width:max-content;animation:marq 38s linear infinite}
+@keyframes marq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.marq{animation:none}}
+.prow{display:grid;grid-template-columns:80px minmax(0,2fr) minmax(0,2fr) minmax(0,1fr) 40px;gap:24px;align-items:baseline}
+.prow:hover{background:rgba(10,10,10,.04)}
+@media (max-width:480px){.brandtxt{display:none}}
+@media (max-width:720px){
+.stage{height:calc(100svh - 68px)!important}
+.stage-in{flex-direction:column!important;flex-wrap:nowrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important}
+.fmeta{flex:0 0 auto!important;gap:12px!important}
+.fside{flex:0 0 auto!important}
+.fbig{font-size:84px!important}
+.fbox{height:250px!important}
+.hint{display:none}
+.ftitle{font-size:44px!important}
+.fdesc{display:none}
+.flist{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+.flist>div{grid-template-columns:1fr!important;gap:2px!important;padding:10px 0 0!important;text-align:center}
+.flist>div>.mono{display:none}
+.flist>div>span:last-child>.serif{font-size:16px!important}
+.flist>div>span:last-child>.mono{display:none}
+.fdone{font-size:24px!important;text-align:center!important}
+.disc2{margin-top:0!important}
+}
+@media (max-width:720px){header nav{display:none!important}.wrap{padding:0 20px}.prow{grid-template-columns:40px minmax(0,1fr) 24px}.prow>span:nth-child(3),.prow>span:nth-child(4){grid-column:2}}
+</style>
+</head>
+<body>
+<div style="width: 100%; background: #0A0A0A; color: #ECEAE4; overflow-x: clip">
+
+  <!-- NAV -->
+  <header style="position: sticky; top: 0; z-index: 30; background: rgba(10,10,10,0.82); backdrop-filter: blur(10px)">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px">
+      <a href="#top" style="display: flex; align-items: center; gap: 14px; text-decoration: none">
+        <img src="assets/logo.png" alt="Escudo de Élite Taekwondo Málaga" style="height: 40px; width: auto; display: block">
+        <span class="mono brandtxt" style="color: #ECEAE4">Élite Taekwondo — Málaga</span>
+      </a>
+      <nav aria-label="Principal" class="mono" style="display: flex; flex-wrap: wrap; gap: 32px">
+        <a href="#manifiesto" style="text-decoration: none">Manifiesto</a>
+        <a href="#programas" style="text-decoration: none">Programas</a>
+        <a href="#maestra" style="text-decoration: none">Maestra</a>
+        <a href="#contacto" style="text-decoration: none">Contacto</a>
+      </nav>
+      <a href="https://wa.me/34665008460" class="mono" style="text-decoration: none; border: 1px solid rgba(236,234,228,.4); border-radius: 999px; padding: 12px 18px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
+        <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent)"></span>Reserva tu clase
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" data-sec="hero" style="position: relative; overflow: hidden">
+    <div class="wrap" style="position: relative; padding-top: 40px; padding-bottom: 88px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; color: #8C8A85">
+        <p class="mono" style="margin: 0; line-height: 1.7">(01)<br>Taekwondo Olímpico<br>&amp; Tradicional</p>
+        <p class="mono" style="margin: 0; line-height: 1.7">De 4 a 100 años</p>
+        <p class="mono" style="margin: 0; line-height: 1.7">Calle Ayala, 11<br>29002 Málaga</p>
+        <p class="mono" style="margin: 0; line-height: 1.7; text-align: right">Todos los días<br>18:00 — 20:00</p>
+      </div>
+      <hr class="rule">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 48px; text-align: center; padding-top: 24px">
+        <div style="position: relative; perspective: 1400px; width: 320px; transform: var(--px-heroBadge, translate3d(0,0,0))">
+          <div aria-hidden="true" style="position: absolute; left: 10%; right: 10%; bottom: -46px; height: 40px; border-radius: 50%; background: radial-gradient(closest-side, rgba(142,197,198,0.28), rgba(0,0,0,0))"></div>
+          <div class="sway">
+            <div role="img" aria-label="Escudo de Élite Taekwondo Málaga en 3D: tigre sobre escudo negro" style="position: relative; width: 320px; aspect-ratio: 497 / 606; transform-style: preserve-3d; transform: var(--badge, none)">
+              <img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-2px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-4px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-6px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-8px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-10px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-12px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-14px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-16px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-18px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-20px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-22px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-24px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-26px)"><img class="b3" src="assets/escudo-canto.png" alt="" style="transform: translateZ(-28px)">
+              <img class="b3" src="assets/escudo-base.png" alt="" style="transform: translateZ(0px)">
+              <img class="b3" src="assets/escudo-texto.png" alt="" style="transform: translateZ(22px)">
+              <img class="b3" src="assets/escudo-tigre.png" alt="" style="transform: translateZ(54px); filter: drop-shadow(0 10px 14px rgba(0,0,0,.7))">
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; transform: var(--px-heroCopy, translate3d(0,0,0))">
+          <h1 class="serif" style="margin: 0; font-size: clamp(52px, 6.4vw, 104px); line-height: .92">Élite Taekwondo<span style="color: var(--accent)">.</span></h1>
+          <p class="serif lt" style="margin: 0; font-size: clamp(20px, 1.8vw, 26px); line-height: 1.3; letter-spacing: -.01em; color: #BDBAB3; max-width: 560px">Taekwondo Olímpico y Tradicional en el centro de Málaga.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 8px">
+            <a href="https://wa.me/34665008460" class="mono" style="text-decoration: none; background: #ECEAE4; color: #0A0A0A; border-radius: 999px; padding: 16px 24px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Reserva tu clase ↗</a>
+            <a href="#manifiesto" class="mono" style="text-decoration: none; border: 1px solid rgba(236,234,228,.4); border-radius: 999px; padding: 16px 24px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Descubre el club ↓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div aria-hidden="true" style="overflow: hidden; border-top: 1px solid rgba(236,234,228,.18); border-bottom: 1px solid rgba(236,234,228,.18); padding: 22px 0">
+    <div class="marq serif it" style="font-size: 44px; gap: 48px; white-space: nowrap; color: #ECEAE4">
+      <span>Lealtad</span><span style="color: var(--accent)">✦</span><span>Valentía</span><span style="color: var(--accent)">✦</span><span>Verdad</span><span style="color: var(--accent)">✦</span><span>Familia</span><span style="color: var(--accent)">✦</span><span>Lealtad</span><span style="color: var(--accent)">✦</span><span>Valentía</span><span style="color: var(--accent)">✦</span><span>Verdad</span><span style="color: var(--accent)">✦</span><span>Familia</span><span style="color: var(--accent)">✦</span>
+    </div>
+  </div>
+
+  <!-- MANIFIESTO -->
+  <section id="manifiesto" data-sec="manif" style="position: relative; overflow: hidden; background: #ECEAE4; color: #0A0A0A; padding: 160px 0">
+    <img aria-hidden="true" alt="" class="layer" src="assets/logo.png" style="right: -140px; top: 60px; width: 620px; height: auto; opacity: 0.07; filter: invert(1) grayscale(1); transform: var(--px-manifLogo, translate3d(0,0,0))">
+    <div class="wrap" style="position: relative; display: flex; flex-wrap: wrap; gap: 64px">
+      <p class="mono" style="flex: 1 1 200px; margin: 0; color: #5E5C57; line-height: 1.7">(02)<br>Manifiesto</p>
+      <div style="flex: 999 1 720px; min-width: 0; display: flex; flex-direction: column; gap: 96px">
+        <p class="serif lt" style="margin: 0; font-size: clamp(36px, 4.2vw, 64px); line-height: 1.06; transform: var(--px-manifText, translate3d(0,0,0))">El taekwondo no va de patadas. Va de volver a levantarse, de respetar al de enfrente <span class="it" style="color: #3D7476">y de llegar a ser quien quieres ser.</span></p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px 32px">
+          <div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #0A0A0A; padding-top: 18px; transform: var(--px-v1, translate3d(0,0,0))">
+            <span class="mono" style="color: #5E5C57">I</span>
+            <span class="serif" style="font-size: 40px; line-height: 1">Lealtad</span>
+            <span style="font-size: 15px; line-height: 1.55; color: #3A3935">Al equipo, al maestro y a uno mismo.</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #0A0A0A; padding-top: 18px; transform: var(--px-v2, translate3d(0,0,0))">
+            <span class="mono" style="color: #5E5C57">II</span>
+            <span class="serif" style="font-size: 40px; line-height: 1">Valentía</span>
+            <span style="font-size: 15px; line-height: 1.55; color: #3A3935">Subir al tatami aunque dé miedo.</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #0A0A0A; padding-top: 18px; transform: var(--px-v3, translate3d(0,0,0))">
+            <span class="mono" style="color: #5E5C57">III</span>
+            <span class="serif" style="font-size: 40px; line-height: 1">Verdad</span>
+            <span style="font-size: 15px; line-height: 1.55; color: #3A3935">El trabajo bien hecho no admite atajos.</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #0A0A0A; padding-top: 18px; transform: var(--px-v4, translate3d(0,0,0))">
+            <span class="mono" style="color: #5E5C57">IV</span>
+            <span class="serif it" style="font-size: 40px; line-height: 1; color: #3D7476">Familia</span>
+            <span style="font-size: 15px; line-height: 1.55; color: #3A3935">Lo que se construye entrenando juntos.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KYORUGI: scroll-driven fight -->
+  <section id="combate" data-sec="fight" aria-label="Combate animado con el scroll" style="position: relative; height: 2800px">
+    <div class="stage" style="position: sticky; top: 68px; height: 720px; overflow: hidden">
+      <div aria-hidden="true" class="layer serif" style="left: 50%; top: 50%; white-space: nowrap; font-size: 340px; line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(236,234,228,.10); transform: var(--fightFar, translate(-50%,-50%))">Kyorugi — Kyorugi</div>
+      <div class="wrap stage-in" style="position: relative; height: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+        <div class="fmeta" style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+          <p class="mono" style="margin: 0; color: #8C8A85; line-height: 1.7">(03)<br>Kyorugi · Combate olímpico</p>
+          <p class="serif it fbig" style="margin: 0; font-size: 150px; line-height: .85">0<span id="frameLabel">1</span><span style="font-size: 40px; color: #8C8A85"> / 09</span></p>
+          <div style="width: 220px; height: 1px; background: rgba(236,234,228,.18)">
+            <div style="height: 1px; background: var(--accent); width: var(--progress, 11%)"></div>
+          </div>
+          <p class="serif it" style="margin: 0; font-size: 36px; line-height: 1"><span id="fightWord">Lealtad</span></p>
+        </div>
+        <div class="fside" style="flex: 999 1 640px; min-width: 0; position: relative">
+          <div class="fbox" style="position: relative; height: 420px; border-top: 1px solid rgba(236,234,228,.18); border-bottom: 1px solid rgba(236,234,228,.18)">
+            <div style="position: absolute; left: 50%; top: 50%; width: 340px; margin: -125px 0 0 -170px; transform: var(--fightX, none)">
+              <div aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 260px; height: 260px; margin: -130px 0 0 -130px; border-radius: 50%; border: 1px solid rgba(142,197,198,.4); transform: var(--flash, none)"></div>
+              <div class="fighters" role="img" aria-label="Secuencia de combate: patadas sucesivas entre dos taekwondistas" style="position: relative; width: 340px; aspect-ratio: 471 / 348; background-position: var(--framePos, 0 0)"></div>
+            </div>
+            <span class="mono" style="position: absolute; left: 0; bottom: 14px; color: #8C8A85">Hong ←</span>
+            <span class="mono" style="position: absolute; right: 0; bottom: 14px; color: #8C8A85">→ Chung</span>
+          </div>
+        </div>
+      </div>
+      <p class="mono hint" style="position: absolute; right: 40px; bottom: 28px; margin: 0; color: #8C8A85">Sigue bajando →</p>
+    </div>
+  </section>
+
+  <!-- DISCIPLINAS -->
+  <section data-sec="disc" style="position: relative; overflow: hidden; padding: 160px 0; border-top: 1px solid rgba(236,234,228,.18)">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 72px">
+      <p class="mono" style="margin: 0; color: #8C8A85; line-height: 1.7">(04)<br>Dos caminos, un mismo arte</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 64px">
+        <div style="display: flex; flex-direction: column; gap: 24px; transform: var(--px-d1, translate3d(0,0,0))">
+          <span class="serif" style="font-size: clamp(72px, 9vw, 140px); line-height: .85">Olímpico</span>
+          <hr class="rule">
+          <div style="display: flex; justify-content: space-between; gap: 16px"><span class="mono" style="color: var(--accent)">Kyorugi</span><span class="mono" style="color: #8C8A85">Combate · Competición</span></div>
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #BDBAB3; max-width: 460px">Velocidad, táctica y preparación física. El taekwondo que se ve en los Juegos, entrenado con planificación por temporadas.</p>
+        </div>
+        <div class="disc2" style="display: flex; flex-direction: column; gap: 24px; margin-top: 120px; transform: var(--px-d2, translate3d(0,0,0))">
+          <span class="serif it" style="font-size: clamp(72px, 9vw, 140px); line-height: .85">Tradicional</span>
+          <hr class="rule">
+          <div style="display: flex; justify-content: space-between; gap: 16px"><span class="mono" style="color: var(--accent)">Poomsae</span><span class="mono" style="color: #8C8A85">Técnica · Forma</span></div>
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #BDBAB3; max-width: 460px">Precisión, equilibrio y control. Las formas que dan raíz al arte marcial y forjan disciplina dentro y fuera del tatami.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIGEN: bandera de Corea por piezas -->
+  <section id="origen" data-sec="flag" aria-label="El origen: la bandera de Corea" style="position: relative; height: 3200px; border-top: 1px solid rgba(236,234,228,.18)">
+    <div class="stage" style="position: sticky; top: 68px; height: 720px; overflow: hidden">
+      <div aria-hidden="true" class="layer serif" style="left: 50%; top: 50%; white-space: nowrap; font-size: 300px; line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(236,234,228,.08); transform: var(--fl-bgT, translate(-50%,-50%))">태극기 · 태권도 · 태극기</div>
+      <div class="wrap stage-in" style="position: relative; height: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+        <div class="fmeta" style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+          <p class="mono" style="margin: 0; color: #8C8A85; line-height: 1.7">(05)<br>Origen · Corea</p>
+          <h2 class="serif ftitle" style="margin: 0; font-size: clamp(48px, 5vw, 80px); line-height: .95">Taegeukgi<span class="it" style="color: var(--accent)">.</span></h2>
+          <p class="fdesc" style="margin: 0; font-size: 16px; line-height: 1.6; color: #BDBAB3; max-width: 380px">La bandera de Corea, cuna del taekwondo, se construye con cinco piezas. Cada una es un principio.</p>
+          <div class="flist" style="display: flex; flex-direction: column">
+            <div style="display: grid; grid-template-columns: 44px 48px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 16px 0; border-top: 1px solid rgba(236,234,228,.18); opacity: var(--fl-tL, 1)">
+                <span class="mono" style="color: #8C8A85">00</span>
+                <span style="font-size: 22px; font-weight: 400">태극</span>
+                <span style="display: flex; flex-direction: column; gap: 2px"><span class="serif" style="font-size: 26px; line-height: 1.1">Taeguk</span><span class="mono" style="color: #8C8A85">Equilibrio · Eum y yang</span></span>
+              </div>
+            <div style="display: grid; grid-template-columns: 44px 48px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 16px 0; border-top: 1px solid rgba(236,234,228,.18); opacity: var(--fl-geonL, 1)">
+                <span class="mono" style="color: #8C8A85">01</span>
+                <span style="font-size: 22px; font-weight: 400">건</span>
+                <span style="display: flex; flex-direction: column; gap: 2px"><span class="serif" style="font-size: 26px; line-height: 1.1">Geon</span><span class="mono" style="color: #8C8A85">Cielo</span></span>
+              </div>
+            <div style="display: grid; grid-template-columns: 44px 48px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 16px 0; border-top: 1px solid rgba(236,234,228,.18); opacity: var(--fl-gamL, 1)">
+                <span class="mono" style="color: #8C8A85">02</span>
+                <span style="font-size: 22px; font-weight: 400">감</span>
+                <span style="display: flex; flex-direction: column; gap: 2px"><span class="serif" style="font-size: 26px; line-height: 1.1">Gam</span><span class="mono" style="color: #8C8A85">Agua</span></span>
+              </div>
+            <div style="display: grid; grid-template-columns: 44px 48px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 16px 0; border-top: 1px solid rgba(236,234,228,.18); opacity: var(--fl-riL, 1)">
+                <span class="mono" style="color: #8C8A85">03</span>
+                <span style="font-size: 22px; font-weight: 400">리</span>
+                <span style="display: flex; flex-direction: column; gap: 2px"><span class="serif" style="font-size: 26px; line-height: 1.1">Ri</span><span class="mono" style="color: #8C8A85">Fuego</span></span>
+              </div>
+            <div style="display: grid; grid-template-columns: 44px 48px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 16px 0; border-top: 1px solid rgba(236,234,228,.18); opacity: var(--fl-gonL, 1)">
+                <span class="mono" style="color: #8C8A85">04</span>
+                <span style="font-size: 22px; font-weight: 400">곤</span>
+                <span style="display: flex; flex-direction: column; gap: 2px"><span class="serif" style="font-size: 26px; line-height: 1.1">Gon</span><span class="mono" style="color: #8C8A85">Tierra</span></span>
+              </div>
+          </div>
+        </div>
+        <div class="fside" style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <svg viewBox="-40 -40 440 320" role="img" aria-label="Taegeukgi, la bandera de Corea del Sur, montándose pieza a pieza" style="width: 100%; height: auto; display: block; overflow: visible">
+              <rect x="0" y="0" width="360" height="240" fill="#ECEAE4" style="opacity: var(--fl-fieldO, 1); transform: var(--fl-fieldT, none); transform-origin: 180px 120px"></rect>
+              <rect x="0" y="0" width="360" height="240" fill="none" stroke="rgba(236,234,228,.25)" stroke-width="0.6" stroke-dasharray="3 4"></rect>
+              <g transform="translate(180 120) rotate(33.69)">
+                <circle r="60" fill="none" stroke="rgba(142,197,198,.6)" stroke-width="0.6" style="opacity: var(--fl-guideO, 1)"></circle>
+                <path d="M-60,0 A60,60 0 0 1 60,0 A30,30 0 0 0 0,0 A30,30 0 0 1 -60,0 Z" fill="#CD2E3A" style="opacity: var(--fl-redO, 1); transform: var(--fl-redT, none)"></path>
+                <path d="M-60,0 A60,60 0 0 0 60,0 A30,30 0 0 0 0,0 A30,30 0 0 1 -60,0 Z" fill="#0047A0" style="opacity: var(--fl-blueO, 1); transform: var(--fl-blueT, none)"></path>
+              </g>
+              <g transform="translate(88.5 59) rotate(-56.31)"><g fill="#0A0A0A" style="opacity: var(--fl-geonO, 1); transform: var(--fl-geonT, none)"><rect x="-30" y="-20" width="60" height="10"></rect><rect x="-30" y="-5" width="60" height="10"></rect><rect x="-30" y="10" width="60" height="10"></rect></g></g>
+              <g transform="translate(271.5 59) rotate(56.31)"><g fill="#0A0A0A" style="opacity: var(--fl-gamO, 1); transform: var(--fl-gamT, none)"><rect x="-30" y="-20" width="27.5" height="10"></rect><rect x="2.5" y="-20" width="27.5" height="10"></rect><rect x="-30" y="-5" width="60" height="10"></rect><rect x="-30" y="10" width="27.5" height="10"></rect><rect x="2.5" y="10" width="27.5" height="10"></rect></g></g>
+              <g transform="translate(88.5 181) rotate(-123.69)"><g fill="#0A0A0A" style="opacity: var(--fl-riO, 1); transform: var(--fl-riT, none)"><rect x="-30" y="-20" width="60" height="10"></rect><rect x="-30" y="-5" width="27.5" height="10"></rect><rect x="2.5" y="-5" width="27.5" height="10"></rect><rect x="-30" y="10" width="60" height="10"></rect></g></g>
+              <g transform="translate(271.5 181) rotate(123.69)"><g fill="#0A0A0A" style="opacity: var(--fl-gonO, 1); transform: var(--fl-gonT, none)"><rect x="-30" y="-20" width="27.5" height="10"></rect><rect x="2.5" y="-20" width="27.5" height="10"></rect><rect x="-30" y="-5" width="27.5" height="10"></rect><rect x="2.5" y="-5" width="27.5" height="10"></rect><rect x="-30" y="10" width="27.5" height="10"></rect><rect x="2.5" y="10" width="27.5" height="10"></rect></g></g>
+            </svg>
+          <p class="serif it fdone" style="margin: 0; font-size: clamp(28px, 3vw, 44px); line-height: 1.1; text-align: right; opacity: var(--fl-doneO, 1); transform: var(--fl-doneT, none)">Cinco piezas. <span class="serif" style="font-weight: 500">Un solo arte.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMAS -->
+  <section id="programas" data-sec="prog" style="position: relative; overflow: hidden; background: #ECEAE4; color: #0A0A0A; padding: 160px 0">
+    <div aria-hidden="true" class="layer fighters fr2" style="right: -60px; top: 80px; width: 520px; aspect-ratio: 471 / 348; opacity: 0.14; filter: invert(1) grayscale(1); transform: var(--px-progFighter, translate3d(0,0,0))"></div>
+    <div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 64px">
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
+        <h2 class="serif" style="margin: 0; font-size: clamp(56px, 7vw, 112px); line-height: .9">Programas<span class="it" style="color: #3D7476">.</span></h2>
+        <p style="margin: 0; max-width: 380px; font-size: 16px; line-height: 1.6; color: #3A3935">Sin experiencia previa. El entrenamiento se adapta a cada edad y a cada nivel.</p>
+      </div>
+      <div class="row" style="display: flex; flex-direction: column">
+        <hr class="rule-d">
+        <a href="https://wa.me/34665008460" class="prow" style="padding: 36px 0; color: #0A0A0A">
+          <span class="mono" style="color: #5E5C57">01</span>
+          <span class="serif" style="font-size: clamp(36px, 4vw, 60px); line-height: 1">Infantil</span>
+          <span style="font-size: 16px; line-height: 1.5; color: #3A3935">Coordinación, disciplina y respeto a través del juego.</span>
+          <span class="mono" style="color: #5E5C57">Desde 4 años</span>
+          <span aria-hidden="true" style="font-size: 24px">↗</span>
+        </a>
+        <hr class="rule-d">
+        <a href="https://wa.me/34665008460" class="prow" style="padding: 36px 0; color: #0A0A0A">
+          <span class="mono" style="color: #5E5C57">02</span>
+          <span class="serif it" style="font-size: clamp(36px, 4vw, 60px); line-height: 1">Competición</span>
+          <span style="font-size: 16px; line-height: 1.5; color: #3A3935">Técnica de combate, acrobacias y preparación para campeonatos.</span>
+          <span class="mono" style="color: #5E5C57">Todas las edades</span>
+          <span aria-hidden="true" style="font-size: 24px">↗</span>
+        </a>
+        <hr class="rule-d">
+        <a href="https://wa.me/34665008460" class="prow" style="padding: 36px 0; color: #0A0A0A">
+          <span class="mono" style="color: #5E5C57">03</span>
+          <span class="serif" style="font-size: clamp(36px, 4vw, 60px); line-height: 1">Adultos</span>
+          <span style="font-size: 16px; line-height: 1.5; color: #3A3935">Defensa personal, menos estrés y más confianza, a tu ritmo.</span>
+          <span class="mono" style="color: #5E5C57">Hasta 100 años</span>
+          <span aria-hidden="true" style="font-size: 24px">↗</span>
+        </a>
+        <hr class="rule-d">
+      </div>
+    </div>
+  </section>
+
+  <!-- MAESTRA -->
+  <section id="maestra" data-sec="maestra" style="position: relative; overflow: hidden; padding: 160px 0">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-end">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px; transform: var(--px-mPhoto, translate3d(0,0,0))">
+        <img src="assets/eva.jpg" alt="Eva Párraga con dobok y cinturón negro, en guardia" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 12%; display: block">
+        <span class="mono" style="color: #8C8A85">Fig. 02 — Maestra y fundadora</span>
+      </div>
+      <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 40px; padding-bottom: 40px; transform: var(--px-mText, translate3d(0,0,0))">
+        <p class="mono" style="margin: 0; color: #8C8A85; line-height: 1.7">(06)<br>Quién te entrena</p>
+        <h2 class="serif" style="margin: 0; font-size: clamp(72px, 9vw, 150px); line-height: .85">Eva<br><span class="it">Párraga</span></h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #BDBAB3; max-width: 520px">Al frente del club y del equipo de competición. Exigencia en la técnica, cercanía con cada alumno y un objetivo: que cada persona que pisa el tatami saque su mejor versión.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PALMARÉS -->
+  <section data-sec="palm" style="position: relative; overflow: hidden; padding: 120px 0 160px; border-top: 1px solid rgba(236,234,228,.18)">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end">
+      <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+        <p class="mono" style="margin: 0 0 24px; color: #8C8A85; line-height: 1.7">(07)<br>Temporada 25 / 26 · Un solo campeonato</p>
+        <span class="serif" style="font-size: clamp(220px, 32vw, 480px); line-height: .78; transform: var(--px-palmNum, translate3d(0,0,0))">12</span>
+        <span class="serif it" style="font-size: 40px; color: var(--accent)">medallas.</span>
+      </div>
+      <div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column">
+        <hr class="rule">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 22px 0; transform: var(--px-m1, translate3d(0,0,0))"><span class="mono" style="color: #8C8A85">Oro</span><span class="serif" style="font-size: 64px; line-height: 1">05</span></div>
+        <hr class="rule">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 22px 0; transform: var(--px-m2, translate3d(0,0,0))"><span class="mono" style="color: #8C8A85">Plata</span><span class="serif" style="font-size: 64px; line-height: 1">01</span></div>
+        <hr class="rule">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 22px 0; transform: var(--px-m3, translate3d(0,0,0))"><span class="mono" style="color: #8C8A85">Bronce</span><span class="serif" style="font-size: 64px; line-height: 1">06</span></div>
+        <hr class="rule">
+        <p class="serif it" style="margin: 24px 0 0; font-size: 26px; line-height: 1.2">“Los sueños no se cumplen solos.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section aria-labelledby="h-horarios" style="padding: 140px 0; background: #ECEAE4; color: #0A0A0A">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-end">
+      <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 24px">
+        <p class="mono" style="margin: 0; color: #5E5C57; line-height: 1.7">(08)<br>Horarios</p>
+        <h2 id="h-horarios" class="serif" style="margin: 0; font-size: clamp(56px, 6vw, 96px); line-height: .9">Cuándo<br><span class="it">entrenamos</span></h2>
+      </div>
+      <div style="flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column">
+        <span class="serif" style="font-size: clamp(72px, 10vw, 168px); line-height: .9; letter-spacing: -.05em">18:00<span class="it" style="color: #3D7476"> — </span>20:00</span>
+        <hr class="rule-d" style="margin-top: 32px">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; padding-top: 24px">
+          <div style="display: flex; flex-direction: column; gap: 6px"><span class="mono" style="color: #5E5C57">Cuándo</span><span class="serif" style="font-size: 32px">Todos los días</span></div>
+          <div style="display: flex; flex-direction: column; gap: 6px"><span class="mono" style="color: #5E5C57">Quién</span><span class="serif" style="font-size: 32px">De 4 a 100 años</span></div>
+          <div style="display: flex; flex-direction: column; gap: 6px"><span class="mono" style="color: #5E5C57">Letra pequeña</span><span class="serif it" style="font-size: 24px; line-height: 1.2">Con 101 ya no te admitimos.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" data-sec="contacto" style="position: relative; overflow: hidden; padding: 160px 0 80px">
+    <div aria-hidden="true" class="layer" style="left: 50%; top: 120px; width: 900px; height: 900px; margin-left: -450px; border-radius: 50%; border: 1px solid rgba(142,197,198,.25); transform: var(--px-cRing, translate3d(0,0,0))"></div>
+    <div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 72px">
+      <p class="mono" style="margin: 0; color: #8C8A85; line-height: 1.7">(09)<br>Contacto</p>
+      <h2 class="serif" style="margin: 0; font-size: clamp(88px, 13vw, 220px); line-height: .85; transform: var(--px-cTitle, translate3d(0,0,0))">Ven a<br><span class="it" style="color: var(--accent)">probar.</span></h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px">
+        <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid rgba(236,234,228,.18); padding-top: 20px">
+          <span class="mono" style="color: #8C8A85">Escríbenos</span>
+          <a href="https://wa.me/34665008460" class="serif" style="font-size: 34px; text-decoration: none">WhatsApp ↗</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid rgba(236,234,228,.18); padding-top: 20px">
+          <span class="mono" style="color: #8C8A85">Llámanos</span>
+          <a href="tel:+34665008460" class="serif" style="font-size: 34px; text-decoration: none">665 008 460</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid rgba(236,234,228,.18); padding-top: 20px">
+          <span class="mono" style="color: #8C8A85">Visítanos</span>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%C3%89lite+Taekwondo+M%C3%A1laga+Calle+Ayala+11" class="serif" style="font-size: 34px; text-decoration: none; line-height: 1.1">Calle Ayala, 11 ↗</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid rgba(236,234,228,.18); padding-top: 20px">
+          <span class="mono" style="color: #8C8A85">Síguenos</span>
+          <a href="https://www.instagram.com/elitetkd_malaga/" class="serif" style="font-size: 34px; text-decoration: none">Instagram ↗</a>
+          <a href="https://www.tiktok.com/@elitetkd_malaga" class="serif" style="font-size: 34px; text-decoration: none">TikTok ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; padding-top: 28px; padding-bottom: 28px; border-top: 1px solid rgba(236,234,228,.18)">
+      <span class="mono" style="color: #8C8A85">© 2026 Club Élite Taekwondo Málaga</span>
+      <img src="assets/logo.png" alt="" aria-hidden="true" style="height: 36px; width: auto">
+      <span class="mono" style="color: #8C8A85">Lealtad · Valentía · Verdad · Familia</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+/* Élite Taekwondo Málaga — parallax, escudo 3D, combate y bandera por scroll (bajando y subiendo).
+   LAYERS: nombre -> [sección, velocidad vertical, velocidad horizontal] */
+(function () {
+  var INTENSIDAD = 1;
+  var LAYERS = {"heroBadge":["hero",-0.3,0],"heroCopy":["hero",0.1,0],"manifLogo":["manif",-0.4,0],"manifText":["manif",0.08,0],"v1":["manif",0.04,0],"v2":["manif",0.12,0],"v3":["manif",0.2,0],"v4":["manif",0.28,0],"d1":["disc",-0.06,0],"d2":["disc",0.16,0],"progFighter":["prog",-0.5,0],"mPhoto":["maestra",-0.12,0],"mText":["maestra",0.12,0],"palmNum":["palm",-0.15,0],"m1":["palm",0.05,0],"m2":["palm",0.13,0],"m3":["palm",0.21,0],"cRing":["contacto",-0.3,0],"cTitle":["contacto",0.1,0]};
+  var flagVals = function (q) {
+var seg = function (a, b) { return Math.max(0, Math.min(1, (q - a) / (b - a))); };
+var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
+var f = ease(seg(0.02, 0.14)), r = ease(seg(0.14, 0.28)), b = ease(seg(0.2, 0.34));
+var g1 = ease(seg(0.36, 0.48)), g2 = ease(seg(0.48, 0.6)), g3 = ease(seg(0.6, 0.72)), g4 = ease(seg(0.72, 0.84)), dn = ease(seg(0.86, 0.96));
+var tr = function (t) { return 'translate(0px,' + (-260 * (1 - t)).toFixed(1) + 'px) rotate(' + (-120 * (1 - t)).toFixed(1) + 'deg)'; };
+var lab = function (t) { return (0.28 + 0.72 * t).toFixed(3); };
+return {
+fieldO: f.toFixed(3), fieldT: 'scale(' + (0.6 + 0.4 * f).toFixed(3) + ')',
+guideO: (0.15 + 0.85 * f * (1 - b)).toFixed(3),
+redO: r.toFixed(3), redT: 'translate(' + (-90 * (1 - r)).toFixed(1) + 'px,' + (-180 * (1 - r)).toFixed(1) + 'px) rotate(' + (-180 * (1 - r)).toFixed(1) + 'deg)',
+blueO: b.toFixed(3), blueT: 'translate(' + (90 * (1 - b)).toFixed(1) + 'px,' + (180 * (1 - b)).toFixed(1) + 'px) rotate(' + (-180 * (1 - b)).toFixed(1) + 'deg)',
+geonO: g1.toFixed(3), geonT: tr(g1), gamO: g2.toFixed(3), gamT: tr(g2), riO: g3.toFixed(3), riT: tr(g3), gonO: g4.toFixed(3), gonT: tr(g4),
+tL: lab(b), geonL: lab(g1), gamL: lab(g2), riL: lab(g3), gonL: lab(g4),
+doneO: dn.toFixed(3), doneT: 'translateY(' + (30 * (1 - dn)).toFixed(1) + 'px)',
+bgT: 'translate(calc(-50% + ' + ((0.5 - q) * 1000).toFixed(0) + 'px), -50%)'
+};
+};
+  var root = document.documentElement;
+  var secs = {};
+  document.querySelectorAll('[data-sec]').forEach(function (el) { secs[el.dataset.sec] = el; });
+  var words = ['Lealtad', 'Valentía', 'Verdad', 'Familia'];
+  var label = document.getElementById('frameLabel'), word = document.getElementById('fightWord');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var mx = 0, my = 0;
+  function set(k, v) { root.style.setProperty(k, v); }
+  function prog(el) {
+    var st = el.firstElementChild, r = el.getBoundingClientRect();
+    var top = parseFloat(getComputedStyle(st).top) || 0, span = r.height - st.offsetHeight;
+    return Math.max(0, Math.min(1, (top - r.top) / (span > 1 ? span : 1)));
+  }
+  var ticking = false;
+  function update() {
+    ticking = false;
+    var vh = window.innerHeight, c = {};
+    for (var k in secs) { var r = secs[k].getBoundingClientRect(); c[k] = r.top + r.height / 2 - vh / 2; }
+    if (!reduce) {
+      for (var n in LAYERS) {
+        var d = LAYERS[n], t = c[d[0]] || 0;
+        set('--px-' + n, 'translate3d(' + (t * d[2] * INTENSIDAD).toFixed(1) + 'px,' + (t * d[1] * INTENSIDAD).toFixed(1) + 'px,0)');
+      }
+    }
+    // escudo 3D: gira con el ratón y con el scroll
+    var ht = -(c.hero || 0);
+    if (!reduce) set('--badge', 'rotateY(' + (mx * 36 + ht * 0.08).toFixed(2) + 'deg) rotateX(' + (-my * 24 + Math.min(ht, 400) * 0.03).toFixed(2) + 'deg)');
+    // combate
+    var p = prog(secs.fight, vh), f = Math.min(8, Math.floor(p * 9));
+    set('--framePos', (f / 8 * 100).toFixed(3) + '% 0');
+    set('--progress', (Math.max(p, 1 / 9) * 100).toFixed(1) + '%');
+    set('--fightX', 'translateX(' + ((p - 0.5) * 2 * Math.max(0, Math.min(240, (window.innerWidth - 420) / 2)) * INTENSIDAD).toFixed(0) + 'px)');
+    set('--fightFar', 'translate(calc(-50% + ' + ((0.5 - p) * 900 * INTENSIDAD).toFixed(0) + 'px),-50%)');
+    set('--flash', 'scale(' + (0.9 + 0.18 * Math.sin(((p * 9) % 1) * Math.PI)).toFixed(3) + ')');
+    label.textContent = f + 1;
+    var w = words[Math.min(3, Math.floor(p * 4))];
+    if (word.textContent !== w) word.textContent = w;
+    // bandera de Corea
+    var fv = flagVals(reduce ? 1 : prog(secs.flag, vh));
+    for (var key in fv) set('--fl-' + key, fv[key]);
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  secs.hero.addEventListener('mousemove', function (e) {
+    var r = secs.hero.getBoundingClientRect();
+    mx = (e.clientX - r.left) / r.width - 0.5; my = (e.clientY - r.top) / r.height - 0.5; onScroll();
+  });
+  secs.hero.addEventListener('mouseleave', function () { mx = 0; my = 0; onScroll(); });
+  update();
+})();
+</script>
+</body>
+</html>
